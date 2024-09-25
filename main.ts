@@ -5,12 +5,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 let stolpetall = 0
-let sender_id = 0
-radio.setGroup(sender_id)
-basic.forever(function () {
-    sender_id = 4
-    radio.setGroup(sender_id)
-})
+radio.setGroup(42)
 basic.forever(function () {
     basic.pause(500)
     basic.clearScreen()
